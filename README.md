@@ -6,8 +6,6 @@ Use it as a builder.
 FROM milesich/delve AS builder
 FROM alpine:3
   
-WORKDIR /
-  
 COPY --from=builder /go/bin/dlv /
 COPY main /
   
