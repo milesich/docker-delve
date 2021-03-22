@@ -5,7 +5,7 @@ Use it to copy the delve binary to your own image.
 ```
 FROM alpine:3
 
-COPY --from=milesich/delve:1.5.0-1.15 /dlv /
+COPY --from=milesich/delve:1.6.0-1.16 /dlv /
 COPY main /
 
 EXPOSE 2345
